@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/avengerListFragment">
+
+    <fragment
+        android:id="@+id/avengerListFragment"
+        android:name="com.nafi.avengerlist.presentation.avengerlist.AvengerListFragment"
+        android:label="fragment_avenger_list"
+        tools:layout="@layout/fragment_avenger_list" >
+        <action
+            android:id="@+id/action_avengerListFragment_to_avengerDetailFragment"
+            app:destination="@id/avengerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avengerDetailFragment"
+        android:name="com.nafi.avengerlist.presentation.avengerdetail.AvengerDetailFragment"
+        android:label="fragment_avenger_detail"
+        tools:layout="@layout/fragment_avenger_detail" />
+</navigation>
